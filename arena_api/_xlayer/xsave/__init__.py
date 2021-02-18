@@ -10,10 +10,3 @@
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 # -----------------------------------------------------------------------------
-
-import sys as __sys
-
-from arena_api.version import __version__
-
-if (__sys.version_info.major, __sys.version_info.minor) < (3, 6):
-    raise Exception('arena_api package requires python3.6 and above')

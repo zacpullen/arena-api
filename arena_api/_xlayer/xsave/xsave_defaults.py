@@ -11,9 +11,19 @@
 # THE SOFTWARE.
 # -----------------------------------------------------------------------------
 
-import sys as __sys
 
-from arena_api.version import __version__
+XSAVE_STR_BUF_SIZE_DEFAULT = 500
+XSAVE_STR_BUFFER_SIZE_1000 = 1000
 
-if (__sys.version_info.major, __sys.version_info.minor) < (3, 6):
-    raise Exception('arena_api package requires python3.6 and above')
+#from math import inf
+
+'''
+AC_INFINITE = 0xFFFFFFFFFFFFFFFF  # 18446744073709551615
+GET_BUFFER_TIMEOUT_MILLISEC_DEFAULT = inf
+WAIT_ON_EVENT_TIMEOUT_MILLISEC_DEFAULT = inf
+UPDATE_DEVICES_TIMEOUT_MILLISEC_DEFAULT = 1000  # SPECS STANDARD
+NUM_OF_BUFFERS_DEFAULT = 10
+XSAVE_STR_BUFFER_SIZE_DEFAULT = 500
+XSAVE_STR_BUFFER_SIZE_1000 = 1000
+
+'''
