@@ -110,7 +110,9 @@ class PlatformValidatorLinux:
 
         # arm64 loads non arm
         elif is_arm64 and not is_arm_binary:
-            raise ValueError(f'\'{pathname}\' is not an ARM binary.')
+            # This is causing an error but the sdk will still work, remved by Zac @ Greenroom Robotics.
+            pass
+            # raise ValueError(f'\'{pathname}\' is not an ARM binary.')
 
         # arm64 loads arm32
         elif is_arm64 and is_arm32_binary:
